@@ -9,8 +9,12 @@ ul, ol{list-style-type:none;}
 
 /*** Other ***/
 div {
+	width:80%;
+	margin: 0 10%;
+	margin-top: 100px;	
+	position: absolute;
+	z-index: 2;
 	text-align:center;
-	margin: 2%;
 }
 div p a {
 	color: green;
@@ -20,6 +24,8 @@ div p a {
 .navbar_nav {
 	height: 50px;
 	background-color: #000000;
+	position: absolute;
+	z-index: 3;
 }
 .navbar_nav, .menu_a {
 	width: 100%;
