@@ -1,0 +1,70 @@
+/*** Didesweb ***/
+/*** Diseño y desarrollo web ***/
+/*** http://didesweb.com/ ***/
+
+/*** Reset ***/
+*{padding: 0;margin: 0;border:0;}
+a{text-decoration: none;color: #FFFFFF;}
+ul, ol{list-style-type:none;}
+
+/*** Other ***/
+div {
+	text-align:center;
+	margin: 2%;
+}
+div p a {
+	color: green;
+}
+
+/*** Navbar ***/
+.navbar_nav {
+	height: 50px;
+	background-color: #000000;
+}
+.navbar_nav, .menu_a {
+	width: 100%;
+}
+.menu_li, .menu_a {
+	display: inline-block;
+}
+.menu_li {
+	width: 25%;
+	float: left;
+	opacity: 0.8;
+	text-align: center;
+	height: 50px;
+	background-color: #000000;
+}
+.menu_a {
+	padding: 16px 0;
+}
+.menu_li:hover, .menu_a:hover {
+	background-color: #222222;
+	opacity: 1;
+}
+#menu-acces {
+	display: none;
+	width: 100%;
+	position: relative;
+	text-align:center;
+}
+.menu_open:after {
+	  content: "";
+	  display: table;
+}
+@media only screen and (max-width: 480px) {
+  #menu-acces {
+    display: block;
+  }
+  .navbar_ul {
+    display: none;
+  }
+  .menu_li{
+    width: 100%;
+    position: relative;
+	opacity: 1;
+  }
+   .menu_open {
+    height: auto;
+  }
+}
